@@ -1,3 +1,4 @@
+import 'package:e_commers_app/features/authentication/screens/password_configration/forget_password.dart';
 import 'package:e_commers_app/features/authentication/screens/sing_up/singup.dart';
 import 'package:e_commers_app/utils/constants/sizes.dart';
 import 'package:e_commers_app/utils/constants/text_strings.dart';
@@ -49,7 +50,8 @@ class LoginForm extends StatelessWidget {
                   ],
                 ),
                 TextButton(
-                    onPressed: () {}, child: const Text(TTexts.forgetPassword))
+                    onPressed: () => Get.to(() => const ForgetPassword()),
+                    child: const Text(TTexts.forgetPassword))
               ],
             ),
 
